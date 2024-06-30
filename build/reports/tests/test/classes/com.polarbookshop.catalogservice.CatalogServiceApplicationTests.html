@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.674s</div>
+<div class="counter">0.832s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,7 +79,7 @@
 </thead>
 <tr>
 <td class="success">whenPostRequestThenBookCreated()</td>
-<td class="success">0.674s</td>
+<td class="success">0.832s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -87,8 +87,8 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>13:44:02.478 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.polarbookshop.catalogservice.CatalogServiceApplicationTests]: CatalogServiceApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-13:44:02.520 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.polarbookshop.catalogservice.CatalogServiceApplication for test class com.polarbookshop.catalogservice.CatalogServiceApplicationTests
+<pre>00:50:54.716 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.polarbookshop.catalogservice.CatalogServiceApplicationTests]: CatalogServiceApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+00:50:54.789 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.polarbookshop.catalogservice.CatalogServiceApplication for test class com.polarbookshop.catalogservice.CatalogServiceApplicationTests
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -99,20 +99,54 @@
 
  :: Spring Boot ::                (v3.3.1)
 
-2024-06-25T13:44:02.675+05:30  INFO 46235 --- [catalog-service] [    Test worker] c.p.c.CatalogServiceApplicationTests     : Starting CatalogServiceApplicationTests using Java 17.0.5 with PID 46235 (started by PARAGUPT in /Users/PARAGUPT/Learning/spring/CloudNativeSpring/my-code/catalog-service)
-2024-06-25T13:44:02.676+05:30  INFO 46235 --- [catalog-service] [    Test worker] c.p.c.CatalogServiceApplicationTests     : No active profile set, falling back to 1 default profile: &quot;default&quot;
-2024-06-25T13:44:03.071+05:30  INFO 46235 --- [catalog-service] [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
-2024-06-25T13:44:03.076+05:30  INFO 46235 --- [catalog-service] [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-06-25T13:44:03.077+05:30  INFO 46235 --- [catalog-service] [    Test worker] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
-2024-06-25T13:44:03.106+05:30  INFO 46235 --- [catalog-service] [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-06-25T13:44:03.106+05:30  INFO 46235 --- [catalog-service] [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 423 ms
-2024-06-25T13:44:03.338+05:30  INFO 46235 --- [catalog-service] [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 54814 (http) with context path '/'
-2024-06-25T13:44:03.343+05:30  INFO 46235 --- [catalog-service] [    Test worker] c.p.c.CatalogServiceApplicationTests     : Started CatalogServiceApplicationTests in 0.767 seconds (process running for 1.243)
-2024-06-25T13:44:03.852+05:30 ERROR 46235 --- [catalog-service] [    Test worker] i.n.r.d.DnsServerAddressStreamProviders  : Unable to load io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'. Use DEBUG level to see the full stack: java.lang.UnsatisfiedLinkError: failed to load the required native library
-2024-06-25T13:44:03.992+05:30  INFO 46235 --- [catalog-service] [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-06-25T13:44:03.992+05:30  INFO 46235 --- [catalog-service] [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-06-25T13:44:03.993+05:30  INFO 46235 --- [catalog-service] [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-saving book with price 10.0
+2024-06-30T00:50:55.196+05:30  INFO 37750 --- [catalog-service] [    Test worker] c.p.c.CatalogServiceApplicationTests     : Starting CatalogServiceApplicationTests using Java 17.0.5 with PID 37750 (started by PARAGUPT in /Users/PARAGUPT/Learning/spring/CloudNativeSpring/my-code/github/catalog-service)
+2024-06-30T00:50:55.197+05:30  INFO 37750 --- [catalog-service] [    Test worker] c.p.c.CatalogServiceApplicationTests     : The following 1 profile is active: &quot;integration&quot;
+2024-06-30T00:50:55.206+05:30  INFO 37750 --- [catalog-service] [    Test worker] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2024-06-30T00:50:55.206+05:30  INFO 37750 --- [catalog-service] [    Test worker] o.s.c.c.c.ConfigServerConfigDataLoader   : Exception on Url - http://localhost:8888:org.springframework.web.client.ResourceAccessException: I/O error on GET request for &quot;http://localhost:8888/catalog-service/default&quot;: Connection refused. Will be trying the next url if available
+2024-06-30T00:50:55.206+05:30  WARN 37750 --- [catalog-service] [    Test worker] o.s.c.c.c.ConfigServerConfigDataLoader   : Could not locate PropertySource ([ConfigServerConfigDataResource@767191b1 uris = array&lt;String&gt;['http://localhost:8888'], optional = true, profiles = 'default']): I/O error on GET request for &quot;http://localhost:8888/catalog-service/default&quot;: Connection refused
+2024-06-30T00:50:55.206+05:30  INFO 37750 --- [catalog-service] [    Test worker] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2024-06-30T00:50:55.206+05:30  INFO 37750 --- [catalog-service] [    Test worker] o.s.c.c.c.ConfigServerConfigDataLoader   : Exception on Url - http://localhost:8888:org.springframework.web.client.ResourceAccessException: I/O error on GET request for &quot;http://localhost:8888/catalog-service/integration&quot;: Connection refused. Will be trying the next url if available
+2024-06-30T00:50:55.206+05:30  WARN 37750 --- [catalog-service] [    Test worker] o.s.c.c.c.ConfigServerConfigDataLoader   : Could not locate PropertySource ([ConfigServerConfigDataResource@22587507 uris = array&lt;String&gt;['http://localhost:8888'], optional = true, profiles = 'integration']): I/O error on GET request for &quot;http://localhost:8888/catalog-service/integration&quot;: Connection refused
+2024-06-30T00:50:55.206+05:30  INFO 37750 --- [catalog-service] [    Test worker] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2024-06-30T00:50:55.206+05:30  INFO 37750 --- [catalog-service] [    Test worker] o.s.c.c.c.ConfigServerConfigDataLoader   : Exception on Url - http://localhost:8888:org.springframework.web.client.ResourceAccessException: I/O error on GET request for &quot;http://localhost:8888/catalog-service/default&quot;: Connection refused. Will be trying the next url if available
+2024-06-30T00:50:55.206+05:30  WARN 37750 --- [catalog-service] [    Test worker] o.s.c.c.c.ConfigServerConfigDataLoader   : Could not locate PropertySource ([ConfigServerConfigDataResource@5c77ba8f uris = array&lt;String&gt;['http://localhost:8888'], optional = true, profiles = 'default']): I/O error on GET request for &quot;http://localhost:8888/catalog-service/default&quot;: Connection refused
+2024-06-30T00:50:55.662+05:30  INFO 37750 --- [catalog-service] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-06-30T00:50:55.726+05:30  INFO 37750 --- [catalog-service] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61 ms. Found 1 JDBC repository interface.
+2024-06-30T00:50:55.808+05:30  INFO 37750 --- [catalog-service] [    Test worker] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e460d24a-60ce-3edf-a560-dc3cb29b5759
+2024-06-30T00:50:55.984+05:30  INFO 37750 --- [catalog-service] [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2024-06-30T00:50:55.990+05:30  INFO 37750 --- [catalog-service] [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-30T00:50:55.990+05:30  INFO 37750 --- [catalog-service] [    Test worker] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-06-30T00:50:56.023+05:30  INFO 37750 --- [catalog-service] [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-30T00:50:56.023+05:30  INFO 37750 --- [catalog-service] [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 816 ms
+2024-06-30T00:50:56.116+05:30  INFO 37750 --- [catalog-service] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-30T00:50:56.138+05:30  INFO 37750 --- [catalog-service] [    Test worker] org.testcontainers.images.PullPolicy     : Image pull policy will be performed by: DefaultPullPolicy()
+2024-06-30T00:50:56.139+05:30  INFO 37750 --- [catalog-service] [    Test worker] o.t.utility.ImageNameSubstitutor         : Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+2024-06-30T00:50:56.339+05:30  INFO 37750 --- [catalog-service] [    Test worker] o.t.d.DockerClientProviderStrategy       : Found Docker environment with Environment variables, system properties and defaults. Resolved dockerHost=unix:////Users/PARAGUPT/.colima/docker.sock
+2024-06-30T00:50:56.340+05:30  INFO 37750 --- [catalog-service] [    Test worker] org.testcontainers.DockerClientFactory   : Docker host IP address is localhost
+2024-06-30T00:50:56.350+05:30  INFO 37750 --- [catalog-service] [    Test worker] org.testcontainers.DockerClientFactory   : Connected to docker: 
+  Server Version: 26.1.1
+  API Version: 1.45
+  Operating System: Ubuntu 24.04 LTS
+  Total Memory: 3902 MB
+2024-06-30T00:50:56.351+05:30  WARN 37750 --- [catalog-service] [    Test worker] o.testcontainers.utility.ResourceReaper  : 
+********************************************************************************
+Ryuk has been disabled. This can cause unexpected behavior in your environment.
+********************************************************************************
+2024-06-30T00:50:56.352+05:30  INFO 37750 --- [catalog-service] [    Test worker] org.testcontainers.DockerClientFactory   : Checking the system...
+2024-06-30T00:50:56.353+05:30  INFO 37750 --- [catalog-service] [    Test worker] org.testcontainers.DockerClientFactory   : ✔︎ Docker server version should be at least 1.6.0
+2024-06-30T00:50:56.359+05:30  INFO 37750 --- [catalog-service] [    Test worker] tc.postgres:14.12                        : Creating container for image: postgres:14.12
+2024-06-30T00:50:56.428+05:30  INFO 37750 --- [catalog-service] [    Test worker] tc.postgres:14.12                        : Container postgres:14.12 is starting: b39039312a73d8285c6b516185f3fd7d50addfe6c8b748527a3c45a66fe5f47f
+2024-06-30T00:50:57.334+05:30  INFO 37750 --- [catalog-service] [    Test worker] tc.postgres:14.12                        : Container postgres:14.12 started in PT0.974802S
+2024-06-30T00:50:57.334+05:30  INFO 37750 --- [catalog-service] [    Test worker] tc.postgres:14.12                        : Container is started (JDBC URL: jdbc:postgresql://localhost:32784/test?loggerLevel=OFF)
+2024-06-30T00:50:59.546+05:30  INFO 37750 --- [catalog-service] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.testcontainers.jdbc.ConnectionWrapper@528c4353
+2024-06-30T00:50:59.547+05:30  INFO 37750 --- [catalog-service] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-30T00:50:59.944+05:30  INFO 37750 --- [catalog-service] [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-06-30T00:51:00.081+05:30  INFO 37750 --- [catalog-service] [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 60458 (http) with context path '/'
+2024-06-30T00:51:00.100+05:30  INFO 37750 --- [catalog-service] [    Test worker] c.p.c.CatalogServiceApplicationTests     : Started CatalogServiceApplicationTests in 5.248 seconds (process running for 5.816)
+2024-06-30T00:51:00.671+05:30 ERROR 37750 --- [catalog-service] [    Test worker] i.n.r.d.DnsServerAddressStreamProviders  : Unable to load io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'. Use DEBUG level to see the full stack: java.lang.UnsatisfiedLinkError: failed to load the required native library
+2024-06-30T00:51:00.822+05:30  INFO 37750 --- [catalog-service] [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-30T00:51:00.822+05:30  INFO 37750 --- [catalog-service] [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-06-30T00:51:00.822+05:30  INFO 37750 --- [catalog-service] [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
 </pre>
 </span>
 </div>
@@ -124,7 +158,7 @@ saving book with price 10.0
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.8</a> at 25 Jun 2024, 13:44:07</p>
+<a href="http://www.gradle.org">Gradle 8.8</a> at 30 Jun 2024, 00:51:03</p>
 </div>
 </div>
 </body>
