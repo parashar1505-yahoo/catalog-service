@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.polarbookshop.catalogservice.domain.SimpleContainerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-07-02T15:38:47" hostname="PARAGUPT-mac" time="1.116">
+  <properties/>
+  <testcase name="testContainerStartup()" classname="com.polarbookshop.catalogservice.domain.SimpleContainerTest" time="1.116"/>
+  <system-out><![CDATA[2024-07-02T21:08:47.989+05:30  INFO 40744 --- [catalog-service] [    Test worker] tc.postgres:14.4                         : Creating container for image: postgres:14.4
+2024-07-02T21:08:48.039+05:30  INFO 40744 --- [catalog-service] [    Test worker] tc.postgres:14.4                         : Container postgres:14.4 is starting: c2c658f81391bb829fa92fd81a78ca1838eb6fd427279af3d8f4647803941394
+2024-07-02T21:08:48.959+05:30  INFO 40744 --- [catalog-service] [    Test worker] tc.postgres:14.4                         : Container postgres:14.4 started in PT0.969874S
+2024-07-02T21:08:48.960+05:30  INFO 40744 --- [catalog-service] [    Test worker] tc.postgres:14.4                         : Container is started (JDBC URL: jdbc:postgresql://localhost:32773/test?loggerLevel=OFF)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
